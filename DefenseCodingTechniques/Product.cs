@@ -13,13 +13,20 @@
         /// <returns>Resulting profit margin</returns>
         public decimal CalculateMargin(string costInput, string priceInput)
         {
-            decimal cost = decimal.Parse(costInput);
-            decimal price = decimal.Parse(priceInput);
-
-            var margin = ((price - cost) / price) * 100M;
+            decimal margin = 0;
+            
+            bool success = decimal.TryParse(costInput, out decimal cost);
+         
+            if (success)
+            {
+                success = decimal.TryParse(priceInput, out decimal price);
+                if (success && price > 0)
+                {
+                    margin = ((price - cost) / price) * 100M;
+                }
+            }
 
             return margin;
         }
-
     }
 }
