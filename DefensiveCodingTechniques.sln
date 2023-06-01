@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefensiveCodingTechniques", "DefenseCodingTechniques\DefensiveCodingTechniques.csproj", "{663B6869-1F82-482E-8427-29F1EC4D35C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefenseCodingTechniques.Tests", "DefenseCodingTechniques.Tests\DefenseCodingTechniques.Tests.csproj", "{96790B00-03B3-482A-A177-BD08F289BF4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663B6869-1F82-482E-8427-29F1EC4D35C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663B6869-1F82-482E-8427-29F1EC4D35C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663B6869-1F82-482E-8427-29F1EC4D35C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663B6869-1F82-482E-8427-29F1EC4D35C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96790B00-03B3-482A-A177-BD08F289BF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96790B00-03B3-482A-A177-BD08F289BF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96790B00-03B3-482A-A177-BD08F289BF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96790B00-03B3-482A-A177-BD08F289BF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DAD34AA-A4A9-4587-9544-74B6761E1141}
+	EndGlobalSection
+EndGlobal
