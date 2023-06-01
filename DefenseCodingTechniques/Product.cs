@@ -1,4 +1,6 @@
-﻿namespace DefensiveCodingTechniques
+﻿using DefenseCodingTechniques.Utilities;
+
+namespace DefensiveCodingTechniques
 {
     public class Product
     {
@@ -13,19 +15,11 @@
         /// <returns>Resulting profit margin</returns>
         public decimal CalculateMargin(string costInput, string priceInput)
         {
-            if (string.IsNullOrWhiteSpace(costInput))
-                throw new ArgumentException("Please enter the cost");
+            Guard.ThrowIfNullOrEmpty(costInput, "Please enter the cost");
+            Guard.ThrowIfNullOrEmpty(priceInput, "Please enter the price");
 
-            if (string.IsNullOrWhiteSpace(priceInput))
-                throw new ArgumentException("Please enter the price");
-
-            bool success = decimal.TryParse(costInput, out decimal cost);
-            if (!success || cost < 0)
-                throw new ArgumentException("The cost must be a number 0 or greater");
-
-            success = decimal.TryParse(priceInput, out decimal price);
-            if (!success || price <= 0)
-                throw new ArgumentException("The price must be a number greater than 0");
+            var cost = Guard.ThrowIfNotPositiveDecimal(costInput, "The cost must be a number 0 or greater");
+            var price = Guard.ThrowIfNotPositiveNonZeroDecimal(priceInput, "The price must be a number greater than 0");
 
             return CalculateMargin(cost, price);
         }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefensiveCodingTechniques",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefenseCodingTechniques.Tests", "DefenseCodingTechniques.Tests\DefenseCodingTechniques.Tests.csproj", "{96790B00-03B3-482A-A177-BD08F289BF4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefenseCodingTechniques.Utilities", "DefenseCodingTechniques.Utilities\DefenseCodingTechniques.Utilities.csproj", "{78C960BF-973D-4B24-8E5F-1F504054D026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{96790B00-03B3-482A-A177-BD08F289BF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96790B00-03B3-482A-A177-BD08F289BF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96790B00-03B3-482A-A177-BD08F289BF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C960BF-973D-4B24-8E5F-1F504054D026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C960BF-973D-4B24-8E5F-1F504054D026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C960BF-973D-4B24-8E5F-1F504054D026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C960BF-973D-4B24-8E5F-1F504054D026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
