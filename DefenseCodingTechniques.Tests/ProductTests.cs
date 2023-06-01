@@ -158,7 +158,7 @@ namespace DefenseCodingTechniques.Tests
 
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() => product.CalculateMargin(cost, price));
-            Assert.Equal("The price must be a number greater than 0 (Parameter 'price')", ex.Message);
+            Assert.Equal("The price must be a number greater than 0", ex.Message);
         }
 
         [Fact]
@@ -171,7 +171,7 @@ namespace DefenseCodingTechniques.Tests
 
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() => product.CalculateMargin(cost, price));
-            Assert.Equal("Please enter the price (Parameter 'price')", ex.Message);
+            Assert.Equal("Please enter the price", ex.Message);
         }
 
         [Fact]
@@ -184,7 +184,7 @@ namespace DefenseCodingTechniques.Tests
 
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() => product.CalculateMargin(cost, price));
-            Assert.Equal("Please enter the cost (Parameter 'cost')", ex.Message);
+            Assert.Equal("Please enter the cost", ex.Message);
         }
 
         [Fact]
@@ -198,7 +198,7 @@ namespace DefenseCodingTechniques.Tests
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() =>
                                         product.CalculateMargin(cost, price));
-            Assert.Equal("Please enter the price (Parameter 'price')", ex.Message);
+            Assert.Equal("Please enter the price", ex.Message);
         }
 
         [Fact]
@@ -212,7 +212,7 @@ namespace DefenseCodingTechniques.Tests
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() =>
                                         product.CalculateMargin(cost, price));
-            Assert.Equal("Please enter the cost (Parameter 'cost')", ex.Message);
+            Assert.Equal("Please enter the cost", ex.Message);
         }
 
         [Fact]
@@ -225,7 +225,7 @@ namespace DefenseCodingTechniques.Tests
 
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() => product.CalculateMargin(cost, price));
-            Assert.Equal("The price must be a number greater than 0 (Parameter 'price')", ex.Message);
+            Assert.Equal("The price must be a number greater than 0", ex.Message);
         }
 
         [Fact]
@@ -241,7 +241,7 @@ namespace DefenseCodingTechniques.Tests
 
             // Assert
             var ex = Assert.Throws<ArgumentException>(act);
-            Assert.Equal("The cost must be a number 0 or greater (Parameter 'cost')", ex.Message);
+            Assert.Equal("The cost must be a number 0 or greater", ex.Message);
         }
 
         [Fact]
@@ -255,7 +255,7 @@ namespace DefenseCodingTechniques.Tests
             // Act & Assert
             var ex = Assert.Throws<ArgumentException>(() =>
                                             product.CalculateMargin(cost, price));
-            Assert.Equal("The cost must be a number 0 or greater (Parameter 'cost')",
+            Assert.Equal("The cost must be a number 0 or greater",
                           ex.Message);
         }
     }
