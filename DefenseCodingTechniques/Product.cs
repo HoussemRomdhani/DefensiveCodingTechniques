@@ -27,9 +27,12 @@
             if (!success || price <= 0)
                 throw new ArgumentException("The price must be a number greater than 0");
 
-            decimal margin = Math.Round(((price - cost) / price) * 100M);
+            return CalculateMargin(cost, price);
+        }
 
-            return margin;
+        private decimal CalculateMargin(decimal cost, decimal price)
+        {
+           return Math.Round((price - cost) / price * 100M);
         }
     }
 }
